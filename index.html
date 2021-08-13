@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/pwa-192x192.png">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00aba9">
-  <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    (function() {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      const setting = localStorage.getItem('color-schema') || 'auto'
-      if (setting === 'dark' || (prefersDark && setting !== 'light'))
-        document.documentElement.classList.toggle('dark', true)
-    })()
-  </script>
-  <script type="module" src="/src/main.ts"></script>
-</body>
+<html lang="en" translate="no" class="notranslate">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/main.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watheia Realtime Support</title>
+    <meta name="google" content="notranslate" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@zernonia" />
+    <meta name="twitter:title" content="Watheia Realtime Support" />
+    <meta
+      name="twitter:description"
+      content="NextConf Realtime Clone using Supabase Realtime"
+    />
+    <meta
+      name="twitter:image"
+      content="https://gitlab.com/watheia/corporate/realtime-hero/-/raw/master/images/main.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Watheia Realtime Support" />
+    <meta
+      property="og:url"
+      content="https://watheia.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://gitlab.com/watheia/corporate/realtime-hero/-/raw/master/images/main.png"
+    />
+    <meta
+      property="og:description"
+      content="Watheia Realtime Support.
+      NextConf Realtime Clone using Supabase Realtime."
+    />
+    <script
+      async
+      defer
+      data-website-id="81c673bf-cdc5-496a-9b0b-57d6d84e7f60"
+      src="https://watheia.app/umami.js"
+    ></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

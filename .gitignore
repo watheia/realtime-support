@@ -1,11 +1,8 @@
+node_modules
 .DS_Store
-.vite-ssg-dist
-.vite-ssg-temp
-*.local
 dist
 dist-ssr
-node_modules
-# intellij stuff
-.idea/
-# logs
-*.log
+*.local
+
+.vercel
+.env
